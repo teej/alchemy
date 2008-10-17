@@ -1,0 +1,64 @@
+= Name
+
+Alchemy v. 1.0.1 - a simple, light-weight list caching server
+
+= Description
+
+Alchemy is fast, simple, and distributed list caching server intended to
+relieve load on relational
+databases.  It uses the same scalable, non-blocking architecture that
+Starling (http://github.com/defunkt/starling) is built on. It also speaks
+the Memcache protocol, so any language that has a memcached client can
+operate with Alchemy.
+
+= Installation
+
+  This project is hosted at GitHub:
+
+  http://github.com/teej/alchemy/tree/master
+
+  Alchemy can be installed through GitHub gems:
+
+  gem sources -a http://gems.github.com
+  sudo gem install teej-alchemy
+
+= Quick Start Usage
+
+  # View the Starling help and usage message
+  alchemy --help
+
+  # In a console window start the Starling server.  By default
+  # it runs verbosely in the foreground, listening on 127.0.0.1:22122
+  # and stores its files under /tmp/alchemy:
+  alchemy
+
+  # In a new console test the put and get of messages on a queue:
+
+  irb
+  >> require 'alchemy'
+  => true
+  >> alchemy = Alchemy.new('127.0.0.1:22122')
+  => #<Alchemy:0x203f384 ... >
+  >> alchemy.set("my_array", "chunky")
+  => nil
+  >> alchemy.set("my_array", "bacon")
+  => nil
+  >> alchemy.get("my_array")
+  => ["chunky", "bacon"]
+
+= Authors
+
+* TJ Murphy
+
+= Starling Contributors
+
+* Blaine Cook
+* Chris Wanstrath
+* AnotherBritt
+* Glenn Rempe
+* Abdul-Rahman Advany
+
+= Copyright
+
+Alchemy - a simple, light-weight list caching server.
+Copyright 2008 TJ Murphy
