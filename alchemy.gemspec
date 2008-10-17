@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.files    = ["License.txt", 
 		"README.rdoc",
 		"alchemy.gemspec",
-		"init.rb"
+		"init.rb",
 		"bin/alchemy",
 		"lib/alchemy.rb",
 		"lib/alchemy/handler.rb",
