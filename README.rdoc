@@ -24,13 +24,10 @@ operate with Alchemy.
 
 = Quick Start Usage
 
-  # View the Starling help and usage message
-  alchemy --help
-
-  # In a console window start the Starling server.  By default
+  # In a console window start the Alchemy server.  By default
   # it runs verbosely in the foreground, listening on 127.0.0.1:22122
-  # and stores its files under /tmp/alchemy:
-  alchemy
+  # and stores its files under /tmp/alchemy.  To run it as a daemon:
+  alchemy -d
 
   # In a new console test the put and get of messages on a queue:
 
