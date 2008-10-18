@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
     "lib/alchemy/phylactery.rb",
     "lib/alchemy/runner.rb",
     "lib/alchemy/server.rb",
-    "lib/active_record/alchemized_by.rb",
-    "lib/active_record/uses_alchemy.rb"]
+    "lib/alchemy/alchemized_by.rb",
+    "lib/alchemy/uses_alchemy.rb"]
   s.test_files = []
   s.executables = ["alchemy"]
   s.rdoc_options = ["--main", "README.rdoc"]
