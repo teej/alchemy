@@ -24,6 +24,6 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README.rdoc"]
   s.extra_rdoc_files = ["README.rdoc"]
   s.add_dependency("json", ["> 1.0.0"])
-  s.add_dependency("memcached", ["> 0.11"])
-  s.add_dependency("eventmachine", ["> 0.12.2"])
+  s.add_dependency("memcached", [">= 0.11"])
+  s.add_dependency("eventmachine", [">= 0.12.2"])
 end

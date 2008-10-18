@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
 
-require File.join(File.dirname(__FILE__), '../lib/alchemy/runner')
+require 'rubygems'
+require 'alchemy/runner'
 AlchemyServer::Runner.run
