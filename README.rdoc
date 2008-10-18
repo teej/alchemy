@@ -13,23 +13,24 @@ operate with Alchemy.
 
 = Installation
 
-  This project is hosted at GitHub:
+This project is hosted at GitHub:
 
-  http://github.com/teej/alchemy/tree/master
+http://github.com/teej/alchemy/tree/master
 
-  Alchemy can be installed through GitHub gems:
+Alchemy can be installed through GitHub gems:
 
   gem sources -a http://gems.github.com
   sudo gem install teej-alchemy
 
 = Quick Start Usage
 
-  # In a console window start the Alchemy server.  By default
-  # it runs verbosely in the foreground, listening on 127.0.0.1:22122
-  # and stores its files under /tmp/alchemy.  To run it as a daemon:
+In a console window start the Alchemy server.  By default
+it runs verbosely in the foreground, listening on 127.0.0.1:22122
+and stores its files under /tmp/alchemy.  To run it as a daemon:
+
   alchemy -d
 
-  # In a new console test the put and get of messages on a queue:
+In a new console test the put and get of items in a list:
 
   irb
   >> require 'alchemy'
