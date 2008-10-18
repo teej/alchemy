@@ -21,7 +21,7 @@ module UsesAlchemy
 			if reload.first || list.nil?
 			  refreshed_list = klass.find(:all, :select=>"#{opts[:store]}, #{opts[:on]}", :conditions=>["#{opts[:on]} = ?", self.id])
 			  refreshed_list = refreshed_list.map(&opts[:store])
-			  ALCHEMY.replace(send(alchemy_listname), refreshed_list.to_json)
+			  ALCHEMY.replace(send(alchemy_listname), refreshed_list)
 			  list = refreshed_list
 			end
 			opts[:proc].call(list)
