@@ -17,7 +17,7 @@ class Alchemy < Memcached
   
   def replace(key, value, timeout=0)
     check_return_code(
-      Lib.memcached_replace(@struct, key, value.to_s, timeout, FLAGS)
+      Lib.memcached_replace(@struct, key, value.to_a.to_json, timeout, FLAGS)
     )
   end
   
