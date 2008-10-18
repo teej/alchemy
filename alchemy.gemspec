@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
     "lib/active_record/alchemized_by.rb",
     "lib/active_record/uses_alchemy.rb"]
   s.test_files = []
+  s.executables = ["alchemy"]
   s.rdoc_options = ["--main", "README.rdoc"]
   s.extra_rdoc_files = ["README.rdoc"]
   s.add_dependency("json", ["> 1.0.0"])
