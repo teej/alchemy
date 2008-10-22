@@ -1,6 +1,6 @@
 = Name
 
-Alchemy v. 1.0.1 - a simple, light-weight list caching server
+Alchemy v. 1.1.1 - a simple, light-weight list caching server
 
 = Description
 
