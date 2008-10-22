@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "alchemy"
-  s.version  = "1.0.1"
+  s.version  = "1.1.1"
   s.date     = "2008-10-17"
   s.summary  = "A simple, light-weight list caching server"
   s.email    = "teej.murphy@gmail.com"

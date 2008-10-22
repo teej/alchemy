@@ -10,7 +10,7 @@ require File.join(here, 'handler')
 
 module AlchemyServer
 
-  VERSION = "1.0.1"
+  VERSION = "1.1.1"
 
   class Base
     attr_reader :logger
